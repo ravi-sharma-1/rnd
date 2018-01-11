@@ -1,0 +1,176 @@
+@import '../../variables.scss';
+
+.findBooking {
+  .performSearch {
+    margin: 11px 19px 0 21px;
+    background-color: $white;
+    padding: 30px 30px 39px;
+
+    .input-elem{
+      padding-left: 14px !important;
+    }
+
+    .redbrdr{
+      color: red;
+      font-size: 12px;
+      position: absolute;
+    }
+
+    .title {
+      font-size: 16px;
+      font-weight: 600;
+      color: $black;
+      margin-bottom: 41px;
+    }
+
+    .searchBooking {
+      .bookingId {
+        display: inline-block;
+        border-radius: 3.8px;
+        border: solid 2px $grey17;
+      }
+      input {
+        border: 0;
+        width: 245px;
+        height: 48px;
+        font-size: 16px;
+        outline: none;
+      }
+      .cinemaId{
+        display: inline-block;
+        color: $grey;
+        font-size:16px;
+        margin: 0 7px;
+      }
+
+      .invalid {
+        border: red 2px solid;
+      }
+
+      .disabled {
+        background-color: $grey18;
+      }
+
+      button {
+        width: 348px;
+        height: 48px;
+        border-radius: 4px;
+        border: none;
+        font-size: 16px;
+        font-weight: bold;
+        color: $white;
+        background-color: $blue1;
+        margin-left: 60px;
+        cursor: pointer;
+      }
+
+      button:disabled {
+        color: $grey19 !important;
+        background-color: grey !important;
+        cursor: not-allowed !important;
+      }
+
+    }
+
+    .invalidBooking {
+      font-size: 12px;
+      color: $red;
+    }
+  }
+
+  .align-item-even{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .setButtinSpace{
+    margin-top: 30px;
+  }
+
+  .searchedResult {
+    margin: 11px 19px 0 21px;
+    background-color: $white;
+    padding: 30px 30px 8px;
+
+    .title {
+      font-size: 18px;
+      font-weight: 600;
+      color: $black;
+      margin-bottom: 41px;
+    }
+
+    display: flex;
+    justify-content: space-between;
+
+    .leftSide {
+      display: inline-block;
+      .items {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        font-size: 12px;
+        .item {
+          margin: 0 20px 20px 0;
+          flex-grow: 1;
+          width: calc(100% * (1 / 4) - 1px);
+
+          .field {
+            color: $grey16;
+          }
+
+          .value {
+            font-size: 14px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+
+    .rightSide {
+
+      .title {
+        margin: 0;
+      }
+
+      .mobile {
+        margin: 15px 0;
+        font-size: 18px;
+      }
+
+      .cancelledBooking {
+        cursor: pointer;
+        pointer-events: none;
+      }
+
+      button {
+        border: none;
+        font-size: 16px;
+        font-weight: bold;
+        color: $white;
+        cursor: pointer;
+        width: 284px;
+        height: 48px;
+        border-radius: 4px;
+        background-color: $blue1;
+        display: block;
+        margin: 10px;
+      }
+
+      button:disabled {
+        color: $grey19 !important;
+        background-color: grey !important;
+        cursor: not-allowed !important;
+      }
+
+      .ticketPrinted {
+        margin-top: 10px;
+        text-align: center;
+        color: red;
+      }
+    }
+  }
+}
+#ticketContainer{
+  visibility: hidden;
+  position: absolute;
+}

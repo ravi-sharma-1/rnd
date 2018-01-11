@@ -1,0 +1,399 @@
+@import '../../variables.scss';
+
+.confirmBooking {
+  background-color: $aliceBlue;
+
+  .navigationRow {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    background-color: $white;
+    margin-bottom: 8px;
+    box-shadow: 0 2px 4px 0 rgba(73, 73, 73, 0.1);
+
+    /* margin: 0 20px; */
+    .colLeft,
+    .colRight {
+      display: flex;
+      align-items: center;
+    }
+
+    .arrow {
+      width: 51px;
+      height: 21px;
+      background-size: 15px 21px;
+      background-repeat: no-repeat;
+      display: inline-block;
+      margin: 0 0 10px 55px;
+      cursor: pointer;
+    }
+
+    .colLeft {
+      .screenName {
+        font-size: 18px;
+        font-weight: 600;
+        margin-left: 25px;
+      }
+    }
+
+    .colRight {
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+      color: $blue1;
+      margin-right: 60px;
+    }
+  }
+
+  .bookingDetails {
+    margin: 12px 19px 0 21px;
+    background-color: $white;
+    padding: 30px 20px 8px;
+    display: flex;
+    justify-content: space-between;
+
+    .title {
+      font-size: 16px;
+      font-weight: 600;
+      color: $black;
+      margin-bottom: 41px;
+    }
+    .teleBookings{
+      .item{
+        margin: 0 0px 20px 0 !important;
+        flex-grow: 1;
+        width: calc(100% * (1 / 4) - 1px);
+        .field {
+          color: $grey16;
+        }
+
+        .value {
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+    }
+    .leftSide {
+      display: inline-block;
+
+      .showSecialStatus{
+        display: inline-block;
+        margin-right: 28px;
+        text-decoration: underline;
+      }
+
+      .items {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        font-size: 12px;
+
+        .item {
+          margin: 0 20px 20px 0;
+          flex-grow: 1;
+          width: calc(100% * (1 / 4) - 1px);
+
+          .field {
+            color: $grey16;
+          }
+
+          .value {
+            font-weight: 600;
+            font-size: 16px;
+            padding-bottom: 12px;
+            color: $grey9;
+          }
+        }
+      }
+    }
+
+    .rightSide {
+      border-left: 1px dashed;
+      border-color: #ccc;
+      padding-left: 24px;
+      display: inline-block;
+      .quotaPriceDetails {
+        padding: 10px 0 10px 0;
+        border-bottom: 1px solid;
+        border-color: rgba(0, 0, 0, 0.05);
+        .quotaName, .quotaPrice, .quotaTotal {
+          width: 120px;
+          height: 16px;
+          display: inline-block;
+          font-size: 12px;
+          line-height: 1.33;
+          color: #222222;
+        }
+        .quotaPrice, .quotaTotal {
+          width: 60px !important;
+
+        }
+        .quotaTotal {
+          margin-left: 15px !important;
+          text-align: right;
+        }
+        .numericSelector {
+          .ticketCount.General {
+            width: 70px !important;
+            border: 1px solid #00b9f5 !important;
+            border-radius: 4px
+          }
+          label.ticketCount {
+            display: inline-block;
+            width: 19px;
+            height: 17px;
+            text-align: center;
+            background: #fff;
+            border-top: 1px solid #00b9f5;
+            font-size: 12px;
+            color: #00b9f5;
+            border-bottom: 1px solid #00b9f5;
+            padding: 3px 3px 3px 3px;
+            border-right: none;
+            border-left: none;
+          }
+          span{
+            display: inline-block;
+            width: 25px;
+            height: 23px;
+            text-align: center;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: bold;
+            line-height: 1.8;
+            color: rgb(0, 185, 245);
+            background: rgb(255, 255, 255);
+            border: 1px solid rgb(0, 185, 245);
+            border-image: initial;
+          }
+        }
+
+      }
+      .finalAmount {
+        height: 45px;
+        margin-top: 14px;
+        .title {
+          display: inline-block;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 1.14;
+          margin-right: 70px;
+          color: #222222;
+        }
+        .amount {
+          font-size: 14px;
+          display: inline-block;
+          float: right;
+        }
+      }
+
+      button {
+        width: 100%;
+        height: 40px;
+        border-radius: 4px;
+        border: none;
+        font-size: 14px;
+        font-weight: bold;
+        color: $white;
+        background-color: $blue1;
+        cursor: pointer;
+        margin: 0 0 24px;
+      }
+
+      button:disabled {
+        color: $grey19 !important;
+        background-color: grey !important;
+        cursor: not-allowed !important;
+      }
+    }
+  }
+
+  .changeCalculator {
+    margin: 20px 19px 0 21px;
+    background-color: $white;
+    padding: 30px 30px 8px;
+    display: flex;
+    justify-content: space-between;
+
+    .title {
+      font-size: 16px;
+      font-weight: 600;
+      color: $black;
+      margin-bottom: 41px;
+    }
+
+    .leftSide {
+      display: inline-block;
+
+      .subtitle {
+        margin-bottom: 25px;
+      }
+
+      .items {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        font-size: 12px;
+
+        .item {
+          display: inline-block;
+          width: calc(100% * (1 / 3.3) - 1px);
+          margin-bottom: 30px;
+
+          .field {
+            color: $grey16;
+          }
+
+          .value {
+            font-weight: 600;
+            font-size: 16px;
+            padding-bottom: 12px;
+            color: $grey9;
+          }
+
+          .amount {
+            display: inline-block;
+            top: 5px;
+            position: relative;
+            font-size: 16px;
+            color: $grey9;
+          }
+        }
+      }
+    }
+
+    .rightSide {
+      display: inline-block;
+
+      .title {
+        margin: 0;
+        width: 280px;
+      }
+
+      .amount {
+        margin: 22px 0 50px;
+      }
+    }
+  }
+}
+
+.numericSelector {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.numericSelector span:first-child {
+  border-radius: 4px 0 0 4px;
+}
+
+.numericSelector span {
+  display: inline-block;
+  width: 32px;
+  height: 30px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 2;
+  color: rgb(0, 185, 245);
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 185, 245);
+  border-image: initial;
+  border-radius: 0 4px 4px 0;
+}
+
+.numericSelector label.currency_count {
+  display: inline-block;
+  width: 25px;
+  height: 22px;
+  text-align: center;
+  background: $white;
+  border-top: 1px solid $blue1;
+  font-size: 15px;
+  color: $blue1;
+  border-bottom: 1px solid $blue1;
+  padding: 5px 4px 3px 4px;
+  border-right: none;
+  border-left: none;
+}
+.numericSelector label.currency_count_new {
+  width: 25px;
+  height: 22px;
+  text-align: center;
+  background: $white;
+  border-top: 1px solid $blue1;
+  font-size: 15px;
+  color: $blue1;
+  border-bottom: 1px solid $blue1;
+  padding: 5px 10px;
+  border-right: none;
+  border-left: none;
+}
+@media (max-width: 1000px) {
+  .confirmBooking .changeCalculator .leftSide .items .item {
+    width: calc(100% * (1 / 2) - 1px);
+  }
+}
+
+#ticketContainer{
+  display: none;
+}
+.paymentMode{
+  margin: 20px 19px 0 21px;
+  background-color: $white;
+  padding: 30px 30px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .title {
+    font-size: 14px;
+    font-weight: 600;
+    color: $black;
+    margin-bottom: 20px;
+  }
+  .items{
+    list-style-type:none;
+    margin:10px 0;
+    padding:0;
+    li {
+      float:left;
+      margin:0;
+      width:100px;
+      height:40px;
+      position:relative;
+    }
+    input[type="radio"] {
+      opacity:0.011;
+      z-index:90;
+    }
+    label {
+      padding:10px;
+      text-align: center;
+      font-size: 14px;
+      border:1px solid $blue1;
+      cursor:pointer;
+      z-index:90;
+    }
+    label:hover {
+      background:$grey21;
+    }
+    input[type="radio"]:checked + label {
+      background:$blue1;
+      color:$white;
+    }
+    label, input {
+      color:$blue1;
+      display:block;
+      position:absolute;
+      top:0;
+      left:0;
+      right:0;
+      bottom:0;
+    }
+  }
+  }
+._3dCharges{
+  .quotaTotal{
+    float:right !important;
+  }
+}

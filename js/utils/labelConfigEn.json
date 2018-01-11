@@ -1,0 +1,35 @@
+{
+  "cancelBooking":{
+    "modalHeader": "Cancel Booking",
+    "modalBody" : "Are you sure you want to cancel this booking?",
+    "modalFooter" : {
+        "noText": "No",
+        "yesText" : "Yes"
+    }
+  },
+  "bookingSuccessful":{
+    "modalHeader": "Booking Successful!",
+    "modalBody" : "Your booking was successful.",
+    "modalFooter" : {
+      "noText": "Ok",
+      "yesText" : ""
+    }
+  },
+  "bookingFailed":{
+    "modalHeader": "Something went wrong!",
+    "modalBody" : "There was issue while booking, please try after sometime.",
+    "modalFooter" : {
+      "noText": "Ok",
+      "yesText" : ""
+    }
+  },
+  "printSuccessful":{
+    "modalHeader": "Print Successful!",
+    "modalBody" : "Ticket print successful.",
+    "modalFooter" : {
+      "noText": "Ok",
+      "yesText" : ""
+    }
+  }
+
+}

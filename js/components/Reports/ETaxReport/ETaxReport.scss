@@ -1,0 +1,97 @@
+@import '../../../variables.scss';
+
+.eTaxReport {
+  .form {
+    line-height: 50px;
+    padding-top: 35px;
+    margin-top: 10px;
+    border-top: 1px solid $grey7;
+
+    .leftDiv {
+      display: inline-block;
+      width: 30%;
+    }
+
+    .rightDiv {
+      display: inline-block;
+      width: 70%;
+
+      input {
+        width: 100%;
+        cursor: pointer;
+        border: none;
+        border-bottom: 1px $grey7 solid;
+        text-align: left;
+        font-size: 14px;
+      }
+
+      input:focus {
+        outline: none;
+      }
+
+      select {
+        width: 100%;
+        cursor: pointer;
+        background: transparent;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid $grey7;
+        font-size: 14px;
+        min-width: 125px;
+      }
+
+      .datePicker {
+        line-height: 37.1429px;
+        .rdr-Calendar {
+          position: absolute;
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+          margin-left: 100px;
+
+          span.is-selected {
+            background: $blue1 !important;
+          }
+        }
+      }
+
+      .grey {
+        color: $Gray46;
+
+        option {
+          color: black;
+        }
+      }
+    }
+
+    .buttons {
+      button {
+        outline: none;
+        margin-top: 30px;
+        width: 84px;
+        height: 33px;
+        border-radius: 4px;
+        border: none;
+        font-size: 16px;
+        font-weight: bold;
+        color: $white;
+        background-color: $blue1;
+        cursor: pointer;
+      }
+
+      .apply {
+        color: $white;
+        background-color: $blue1;
+      }
+
+      .applyDisabled {
+        color: $white;
+        background-color: $grey8;
+      }
+
+      .clear {
+        color: $grey7;
+        margin-left: 30px;
+        background-color: $aliceBlue;
+      }
+    }
+  }
+}

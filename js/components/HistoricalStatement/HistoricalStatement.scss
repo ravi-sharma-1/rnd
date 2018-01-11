@@ -1,0 +1,91 @@
+@import '../../variables.scss';
+
+.historicalStatement {
+  .dateFilter {
+    display: block;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 31px;
+
+    select {
+      cursor: pointer;
+      margin-left: 17px;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid $grey7;
+      outline: none;
+      -webkit-appearance: none;
+      padding: 0 20px;
+    }
+  }
+
+  .filteredData {
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    display: table;
+
+    .rowsGroup {
+      display: table-row-group;
+      width: 100%;
+
+      .topBorder > div.dataCell {
+        border-top: 1px solid $grey15;
+      }
+
+      .headerRow {
+        display: table-row;
+
+        .headerCell {
+          display: table-cell;
+          padding: 5px 10px;
+          font-weight: 600;
+          font-size: 14px;
+          background-color: $blue6;
+        }
+      }
+
+      .movie {
+        font-weight: 600;
+        text-decoration: underline;
+        background-color: white !important;
+      }
+
+      .dataRow {
+        display: table-row;
+
+        .dataCell {
+          display: table-cell;
+          padding: 5px 10px;
+          font-size: 14px;
+        }
+      }
+
+      .dataRow:nth-child(even) {
+        background-color: $aliceBlue;
+      }
+
+      .dataRow:nth-child(odd) {
+        background-color: white;
+      }
+
+      .headerRow .headerCell:first-child,
+      .dataRow .dataCell:first-child {
+        padding-left: 20px;
+      }
+
+      .headerRow .headerCell:last-child,
+      .dataRow .dataCell:last-child {
+        padding-right: 20px;
+      }
+    }
+  }
+
+  .noDataFound {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

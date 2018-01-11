@@ -1,0 +1,27 @@
+{
+  "seatBlockObj": {
+    "ssn_instance_id": "",
+    "pax_info": {},
+    "category": [],
+    "row": [],
+    "index": []
+  },
+  "seatBlockOnline": {
+    "booking_id": "",
+    "seat_details": "",
+    "seat_count": 0,
+    "pos_user_id": 0,
+    "ssn_instance_id": 0,
+    "print_status": 0,
+    "status": "2"
+  },
+  "seatModifyTeleblockObj": {
+    "bookingId": "",
+    "browserId": "",
+    "transactionId": "",
+    "pos_user_id": "",
+    "category":[],
+    "row":[],
+    "index":[]
+  }
+}

@@ -1,0 +1,96 @@
+@import '../../variables.scss';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 75px;
+  background-color: $white;
+  margin-bottom: 8px;
+
+  .coloredStrip {
+    font-weight: bold;
+    color: $blue1;
+    padding: 0 10px;
+    margin: 0 10px;
+    border: 2px solid $blue1;
+    border-radius: 10px;
+  }
+
+  .offLineStatus{
+    width: 57px;
+    margin-right: 18px;
+    background-color: $grey3;
+    padding: 5px 10px 5px 10px;
+    color: $white;
+  }
+
+  .onLineStatus{
+    width: 57px;
+    margin-right: 18px;
+    background-color:$purple;
+    padding: 5px 10px 5px 10px;
+    color: $white;
+  }
+
+  .leftSide {
+    .paytmLogo {
+      width: 97px;
+      height: 31px;
+      margin: 0 60px;
+      min-width: 97px;
+      background: url(../../../img/paytm_logo.png) no-repeat;
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    div.tabSelect {
+      padding: 0;
+      text-align: center;
+      vertical-align: text-bottom;
+      font-size: 14px;
+      border-bottom: solid 4px $white;
+
+      button {
+        margin: 0;
+        border: none;
+        background-color: transparent;
+        color: $grey16;
+        word-wrap: normal;
+        font-size: 14px;
+        padding: 28px 27px;
+        outline: none;
+        cursor: pointer;
+      }
+    }
+
+    div.selected {
+      button {
+        color: $grey9;
+      }
+
+      border-bottom: solid 4px $blue1;
+    }
+
+    a {
+      padding: 10px 50px 20px;
+      margin: 0;
+    }
+  }
+
+  .rightSide {
+    .logout {
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+      color: $blue1;
+      margin-right: 22px;
+    }
+  }
+}
+
+.header > div {
+  display: flex;
+  align-items: center;
+}

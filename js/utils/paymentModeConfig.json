@@ -1,0 +1,19 @@
+[
+  {
+    "mode": "Cash",
+    "dbValue" : "2"
+  },
+  {
+    "mode": "Paytm",
+    "dbValue" : "4"
+  },
+  {
+    "mode": "Credit Card",
+    "dbValue" : "8"
+  },
+  {
+    "mode": "Debit Card",
+    "dbValue" : "16"
+  }
+
+]

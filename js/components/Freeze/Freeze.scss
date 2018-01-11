@@ -1,0 +1,48 @@
+@import '../../variables.scss';
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+  position: fixed;
+  background-color: $grey3;
+
+  .content {
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    display: flex;
+    padding: 35px 55px;
+    background-color: $white;
+    border: 3px black solid;
+    transform: translate(-50%, -50%);
+
+    .image {
+      height: 81px;
+      width: 81px;
+      background-size: contain;
+      background-image: url(../../../img/loader.gif);
+      background-repeat: no-repeat;
+    }
+
+    .text {
+      padding-top: 10px;
+      margin-left: 20px;
+      text-align: center;
+
+      .big {
+        font-size: 20px;
+      }
+
+      .medium {
+        font-size: 16px;
+        margin-top: 10px;
+      }
+
+      .small {
+        font-size: 14px;
+        margin-top: 10px;
+      }
+    }
+  }
+}

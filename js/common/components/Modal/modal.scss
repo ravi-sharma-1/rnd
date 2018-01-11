@@ -1,0 +1,72 @@
+@import '../../../variables.scss';
+
+.modal {
+  position: fixed;
+  z-index: 100  ;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: $grey4;
+  margin: 15% auto;
+  padding: 10px 20px 40px;
+  border: 1px solid $grey5;
+  width: 35%;
+
+  h2 {
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.87);
+    margin-top: 9px;
+  }
+}
+
+.close {
+  color: $grey6;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mainTextArea {
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.54);
+  margin-bottom: 40px;
+}
+
+.actionBtn {
+  float: right;
+}
+
+.actionBtn span {
+  width: 22px;
+  height: 19px;
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: .5px;
+  padding: 7px 15px 7px 15px;
+  color: #fff;
+  text-align: center;
+  background-color: #00b9f5;
+  margin-right: 20px;
+  cursor: pointer;
+  border-radius: 3px;
+}

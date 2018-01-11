@@ -1,0 +1,98 @@
+@import '../../variables.scss';
+
+.movieDetails {
+  display: flex;
+  margin: 20px;
+  background: $white;
+  padding: 20px;
+  overflow: hidden;
+  img {
+	width: 100px;
+	height: 100px;
+	font-size: 12px;
+	text-align: center;
+	background-size: cover;
+    background-image: url('../../../img/altImage.jpg');
+  }
+  .showDetails {
+	margin-left: 25px;
+	font-family: sans-serif;
+	width: 90%;
+	.name {
+	  font-size: 14px;
+	  font-weight: bold;
+	}
+	.language {
+	  font-size: 12px;
+	  color: grey;
+	  margin-top: 10px;
+	}
+	.timings {
+	  margin-top:10px;
+	  p {
+		padding: 6px 16px;
+		border: 1px solid $grey13;
+		margin-right: 10px;
+		border-radius: 5px;
+		font-size: 12px;
+		font-weight: bold;
+		color: $green;
+		cursor: pointer;
+	  }
+	}
+	.tooltip {
+	  position: relative;
+	  display: inline-block;
+	  border-bottom: 1px dotted black;
+	  &:hover .tooltiptext {
+		visibility: visible;
+	  }
+	  .tooltiptext {
+		visibility: hidden;
+		width: 235px;
+		background-color: $grey14;
+		color: $black;
+		text-align: center;
+		border-radius: 6px;
+		padding: 5px;
+		position: absolute;
+		z-index: 1;
+		bottom: 150%;
+		left: 40%;
+		margin-left: -60px;
+		.audi {
+			text-align: center;
+			display: inline-block;
+		}
+		span {
+		  display: flex;
+		  justify-content: space-between;
+		  font-size: 12px;
+		  margin: 2px;
+		}
+		.cat {
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			width: 45%;
+			display: inline-block;
+			text-align: left;
+		}
+		.price {
+		  font-size: 10px;
+		  font-weight: normal;
+		}
+		::after {
+		  content: "";
+		  position: absolute;
+		  top: 100%;
+		  left: 50%;
+		  margin-left: -5px;
+		  border-width: 5px;
+		  border-style: solid;
+		  border-color: $grey14 transparent transparent transparent;
+		}
+	  }
+	}
+  }
+}

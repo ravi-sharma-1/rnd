@@ -1,0 +1,94 @@
+@import '../../variables.scss';
+
+.bookTicket {
+  .navBar {
+	display: flex;
+	justify-content: space-between;
+	background: $white;
+	.time {
+	  padding: 20px 0;
+	  width: 30%;
+	  display: flex;
+	  color: $grey16;
+	  justify-content: space-around;
+	}
+    .navTabs {
+      padding: 20px 0;
+      width: 60%;
+      display: flex;
+      color: $grey16;
+      .date {
+        cursor: pointer;
+        margin: 0 10px;
+        span {
+          padding: 5px 10px 5px 10px;
+        }
+      }
+      .drContainer{
+          position: absolute;
+          background-color: $white;
+          border:1px solid $grey14;
+          .dropDownDt{
+            background-color: $white;
+            margin: 0px;
+            min-width: 122px;
+          }
+          .selectedDateFilter{
+             border-radius: 1px;
+          }
+        }
+      .showDropDown{
+        display: block;
+      }
+      .hideDropDown{
+        display: none;
+      }
+      .drSpan{
+        padding:6px 13px 6px 13px !important;
+        display: block;
+      }
+      i {
+        border: solid $grey16;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        cursor: pointer;
+      }
+      .leftSpan{
+        margin-left: 13px;
+      }
+      .right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+      }
+
+      .left {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+      }
+
+      .up {
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+      }
+
+      .down {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+      }
+
+    }
+    .navTabs:first-child {
+      padding-left: 45px;
+    }
+
+    .selectedDateFilter{
+      background: $blue1;
+      color: $white;
+      border-radius: 1px;
+    }
+    .spaceForMenu{
+      margin-right: 10px;
+    }
+  }
+}

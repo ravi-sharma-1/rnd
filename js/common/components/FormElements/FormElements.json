@@ -1,0 +1,40 @@
+{	
+	"totalAmount": 0,
+	"formItems":[
+				{
+					"label": "Rs. 10",
+					"currencyValue": 10, 					
+					"value": 0
+				},
+				{
+					"label": "Rs. 20",
+					"currencyValue": 20,					
+					"value": 0
+				},
+				{
+					"label": "Rs. 50",
+					"currencyValue": 50,					
+					"value": 0
+				},
+				{
+					"label": "Rs. 100",
+					"currencyValue": 100,					
+					"value": 0
+				},
+				{
+					"label": "Rs. 500",
+					"currencyValue": 500,					
+					"value": 0
+				},
+				{
+					"label": "Rs. 2000",
+					"currencyValue": 2000,					
+					"value": 0
+				}
+
+		],
+	"indivdualFormItem":{
+		"value": 0,
+		"defaultValue":0
+	}
+}

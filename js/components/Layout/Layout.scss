@@ -1,0 +1,287 @@
+@import '../../variables.scss';
+
+$assetPath : "../../../img";
+@function get-path-to-assets($assetPath){
+  @return $assetPath;
+}
+/* Layout CSS Start */
+.navigationRowHeader {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  background-color: $white;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 4px 0 rgba(73, 73, 73, 0.1);
+
+  /* margin: 0 20px; */
+  .colLeft,
+  .colRight {
+    display: flex;
+    align-items: center;
+  }
+  .teleBookSpace{
+    margin-right: 10px;
+  }
+
+  .arrow {
+    width: 51px;
+    height: 21px;
+    background: url($assetPath+'/path-36.png');
+    background-size: 15px 21px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 0 0 10px 55px;
+    cursor: pointer;
+  }
+
+  .colLeft {
+    .mainHeader {
+      font-size: 16px;
+      font-weight: 600;
+      color: $black;
+    }
+
+    .subHeader {
+      width: 175px;
+      height: 40px;
+      font-size: 12px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      color: $grey9;
+    }
+
+    .middleContainer {
+      position: relative;
+      top: 0;
+      left: 41px;
+      margin-left: 64px;
+
+      .middleText {
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        color: $grey10;
+      }
+
+      .ticketHeader {
+        font-size: 16px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        color: $grey2;
+      }
+    }
+  }
+
+  .colRight {
+    font-size: 16px;
+    font-weight: 600;
+    color: $blue1;
+    margin-right: 60px;
+  }
+
+  .proceedToBook button {
+    width: 251px;
+    height: 48px;
+    border-radius: 4px;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: $white;
+    background-color: $blue1;
+    cursor: pointer;
+    margin: 24px 0;
+  }
+
+  .proceedToBook button:focus {
+    outline: 0;
+  }
+}
+
+.disabled {
+  background: $grey8 !important;
+  color: $white;
+  pointer-events: none;
+}
+
+.layoutContainer {
+  padding: 20px !important;
+  width: auto;
+  white-space: nowrap;
+  overflow-x: auto;
+  font-size: 12px;
+  margin-left: 35px;
+  margin-right: 10px;
+
+  .reservedSeatRules{
+    background-color: $blue4;
+    color:$white;
+    border-color: $blue4 !important;
+  }
+  .layoutCategory {
+    font-size: 12px;
+    color: $blue5;
+    font-weight: 600;
+    line-height: 2;
+    border-bottom: 1px solid $grey11;
+    margin-bottom: 10px;
+    margin-top: 13px;
+  }
+
+  ul {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: -35px;
+    margin-top: 6px;
+    margin-bottom: 3px;
+  }
+
+  ul.labelContainer {
+    margin-right: 10px;
+    width: 25px;
+    position: relative;
+    top: -15px;
+  }
+
+  span.label {
+    position: relative;
+    display: inline-block;
+    top: 4px;
+  }
+
+  ul li {
+    display: inline-block;
+  }
+
+  li.seatStyleContainer {
+    border: 1px solid $blue1;
+    width: 23px;
+    height: 23px;
+    border-radius: 6px;
+    text-align: center;
+    position: relative;
+  }
+
+  .notAvailbale {
+    background: $grey12 !important;
+    border: 1px solid $grey12 !important;
+    color: $white;
+    cursor: default;
+  }
+
+  .taken {
+    background: $grey13 !important;
+    border: 1px solid $grey13 !important;
+    cursor: default;
+  }
+
+  .taken.reservedSeatRules{
+    color:black;
+  }
+
+  .seatAvailable {
+    cursor: pointer;
+  }
+
+  .active {
+    background-color: $blue1 !important;
+    color: $white;
+    border-color: $blue1 !important;
+  }
+
+  .tele-active {
+    background-color: #FFA400;
+    color: #fff;
+    border: 1px solid #FFA400 !important;
+    cursor: pointer;
+  }
+
+  .active.tele-active {
+    background-color: #FFA400;
+    color: #fff;
+    border: 1px solid #00b9f5 !important;
+    cursor: pointer;
+  }
+
+  span.seatStyle {
+    position: absolute;
+    font-size: 12px;
+    width: 100%;
+    display: inline-block;
+    top : 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform    : translate(-50%, -50%);
+  }
+
+  ul.seatLabelContainer {
+    margin-right: 5px;
+    width: 23px;
+    height: 23px;
+
+    .seatStyleContainerBlank {
+      width: 23px;
+      height: 23px;
+      border-radius: 6px;
+      text-align: center;
+    }
+  }
+
+  .listAllSeats {
+    display: inline-block;
+  }
+
+  .screen {
+    width: 614px;
+    height: 21px;
+    background-color: $grey14;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding-top: 4px;
+    font-size: 10px;
+  }
+
+  .screenTop {
+    margin-bottom: 7%;
+  }
+
+  .screenBottom {
+    margin-top: 10%;
+  }
+
+  .labelDescription {
+    margin-left: auto;
+    margin-right: auto;
+    width: 851px;
+    font-size: 10px;
+    padding: 10px;
+
+    .labelIndicator {
+      width: 24px;
+      height: 24px;
+      border-radius: 6px;
+      display: inline-block;
+      margin-right: 19px;
+    }
+
+    .availableSeatIndicator {
+      border: 1px solid $blue1;
+    }
+
+    .labelDescriptionContainer {
+      position: relative;
+      margin-right: 65px;
+      top: -10px;
+      right: 10px;
+    }
+  }
+  .modal-content-custom{
+    padding: 10px 20px 7px !important;
+  }
+}
+
+/* Layout CSS End */

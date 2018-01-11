@@ -1,0 +1,34 @@
+.telebookingMain{
+  .telebookingHeader{
+    margin-top: 17px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .telebookingBody{
+    margin-top: 53px;
+     input[type="text"], input[type="number"]{
+       width: 92%;
+       border: 0px;
+       border-bottom: 1px solid #e9e9e9;
+       font-size: 14px;
+       margin: 10px 0px;
+       padding: 10px 5px;
+     }
+    input[type="button"]{
+      width: 96%;
+      background-color:#00b9f5;
+      color: #fff;
+      border: 0px;
+      height: 40px;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      margin: 24px 0;
+    }
+    .redbrdr{
+      color: red;
+      font-size: 12px;
+    }
+  }
+}
